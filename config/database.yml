@@ -82,6 +82,7 @@ production:
   primary: &primary_production
     <<: *default
     database: blog_app_production
+    host: host.docker.internal
     username: blog_app
     password: <%= ENV["BLOG_APP_DATABASE_PASSWORD"] %>
   cache:
